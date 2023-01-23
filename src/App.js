@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import Packages from './Components/Cards/Packages';
+import DayExamples from './Components/DayExamples/DayExamples';
+import NavoiMap from './Components/Navbar/NavoiMap/NavoiMap';
+import DayExamplesPage from './Pages/DayExamplesPage';
+import MainPage from './Pages/MainPage';
+import NaturePage from './Pages/NaturePage';
+import UpComingPage from './Pages/UpComingPage';
+import UsefulPage from './Pages/UsefulPage';
+import PackagesPage from './Pages/PackagesPage';
+import OurClientsPage from './Pages/OurClientsPage';
+import FooterPages from './Pages/FooterPages';
+import Places from './Pages/Places';
+import BestPlaces from './Pages/BestPlaces';
+import Slider1 from './image/slider1.png'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='overflow-hidden'>
+      <MainPage />
+      <Places />
+      <BestPlaces />
+      <NavoiMap />
+      <DayExamplesPage />
+      <UpComingPage />
+      <PackagesPage />
+      <UsefulPage />
+      <OurClientsPage />
+      <FooterPages />
     </div>
   );
 }

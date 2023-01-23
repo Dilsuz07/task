@@ -1,13 +1,26 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url("https://fonts.googleapis.com/css2?family=Italiana&family=Lato:wght@100;400;700;900&family=Rubik+Bubbles&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.mainStyle {
+  background-image: url(./image/bg-image1.png);
+}
+.fontFamily,
+.what-do-ul,
+.navoi-map-text,
+.day-para,
+.up-class,
+.our-clients {
+  font-family: "Italiana", serif;
+}
+.what-do {
+  color: rgba(21, 21, 21, 0.4);
+}
+.navoi-map {
+  background-image: url(./image/slider-img.png);
+  color: rgba(255, 255, 255, 0.8);
+}
+.place:hover .circle {
+  opacity: 1;
 }
